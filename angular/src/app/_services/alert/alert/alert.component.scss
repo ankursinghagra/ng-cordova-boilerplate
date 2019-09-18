@@ -1,0 +1,37 @@
+.alert-msg {
+  	display: none;
+	min-width: 250px; /* Set a default minimum width */
+	margin-left: -125px; /* Divide value of min-width by 2 */
+	text-align: center; /* Centered text */
+	border-radius: 2px; /* Rounded borders */
+	padding: 16px; /* Padding */
+	position: absolute; /* Sit on top of the screen */
+	z-index: 1; /* Add a z-index if needed */
+	left: 50%; /* Center the snackbar */
+	bottom: 30px; /* 30px from the bottom */
+	/* -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+   	animation: fadein 0.5s, fadeout 0.5s 3.5s; */
+}
+.alert-msg .alert.fade.in {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+   However, delay the fade out process for 2.5 seconds */
+   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.alert-danger{
+	background-color: #dc3545 !important;
+	color:white;
+}
+.alert-info{
+	background-color: #17a2b8 !important;
+	color:white;
+}
+.alert-success{
+	background-color: #28a745 !important;
+	color:white;
+}
+.alert-primary{
+	background-color: #007bff !important;
+	color:white;
+}
