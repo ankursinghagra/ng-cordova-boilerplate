@@ -1,13 +1,12 @@
-HOW TO ANGULAR CLI FOR CORDOVA
-
+###HOW TO ANGULAR CLI FOR CORDOVA
 
 INSTALL angular cli v7.3.9
-
 
 EDIT THE FOLLOWING FILES:
 
 ./node_modules/@angular/router/fesm5/router.js -4065
 
+```
 	Router.prototype.setUpLocationChangeListener = function () {
         var _this = this;
         // Don't need to use Zone.wrap any more, because zone.js
@@ -24,9 +23,10 @@ EDIT THE FOLLOWING FILES:
             }));
         }
     };
-
+```
 ./node_modules/@angular/router/fesm2015/router.js -5361
 
+```
 	setUpLocationChangeListener() {
         // Don't need to use Zone.wrap any more, because zone.js
         // already patch onPopState, so location change callback will
@@ -45,10 +45,11 @@ EDIT THE FOLLOWING FILES:
             }))));
         }
     }
-
+```
 
 ./node_modules/@angular/router/esm5/src/router.js -427
 
+```
 	Router.prototype.setUpLocationChangeListener = function () {
         var _this = this;
         // Don't need to use Zone.wrap any more, because zone.js
@@ -65,9 +66,11 @@ EDIT THE FOLLOWING FILES:
             }));
         }
     };
+```
 
 ./node_modules/@angular/router/esm2015/src/router.js -628
 
+```
 	setUpLocationChangeListener() {
         // Don't need to use Zone.wrap any more, because zone.js
         // already patch onPopState, so location change callback will
@@ -86,6 +89,6 @@ EDIT THE FOLLOWING FILES:
             }))));
         }
     }
-
+```
 
 
